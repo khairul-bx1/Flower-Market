@@ -1,1 +1,15 @@
-@import "tailwindcss"
+
+
+@font-face {
+  font-family: 'noto';
+  src: url('fonts/noto.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@import "tailwindcss";
+
+@theme {
+  --font-noto: "noto", "sans-serif"
+}
