@@ -1,13 +1,19 @@
 
 @import "tailwindcss";
 
-@font-face {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: 200 700;
-  font-display: swap;
-  src: url("/fonts/noto.ttf") format("woff2");
-}
-@theme {
-  --font-display: "noto", "sans-serif"; 
+/* style.css */
+
+/* ✅ Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ✅ Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ✅ Optional: globally apply font */
+@layer base {
+  body {
+    font-family: 'Noto Serif', serif;
+  }
 }
