@@ -1,15 +1,13 @@
 
-
-@font-face {
-  font-family: 'noto';
-  src: url('fonts/noto.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 @import "tailwindcss";
 
+@font-face {
+  font-family: Oswald;
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: swap;
+  src: url("/fonts/noto.ttf") format("woff2");
+}
 @theme {
-  --font-noto: "noto", "sans-serif"
+  --font-display: "noto", "sans-serif"; 
 }
